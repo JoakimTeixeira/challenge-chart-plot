@@ -1,3 +1,5 @@
+import Input from 'components/Input';
+import Chart from 'components/Chart';
 import { SplitPane } from 'components/SplitPane';
 import React from 'react';
 import { GlobalStyle } from 'styles/global';
@@ -7,8 +9,8 @@ function App() {
     <>
       <GlobalStyle />
       <SplitPane>
-        <SplitPane.Top />
-        <SplitPane.Bottom />
+        <Input />
+        <Chart />
       </SplitPane>
     </>
   );

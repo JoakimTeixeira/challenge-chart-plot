@@ -9,17 +9,9 @@ export const SplitPane = ({ children }) => {
 
   return (
     <SplitContainer>
-      {children[0]}
+      <div className="split-pane-top">{children[0]}</div>
       <Separator />
-      {children[1]}
+      <div className="split-pane-bottom">{children[1]}</div>
     </SplitContainer>
   );
-};
-
-SplitPane.Top = function SplitPaneTop() {
-  return <div className="split-pane-top" />;
-};
-
-SplitPane.Bottom = function SplitPaneBottom() {
-  return <div className="split-pane-bottom" />;
 };
