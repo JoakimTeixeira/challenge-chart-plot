@@ -1,7 +1,17 @@
+import { SplitPane } from 'components/SplitPane';
 import React from 'react';
+import { GlobalStyle } from 'styles/global';
 
 function App() {
-  return <div>Challenge chart plot</div>;
+  return (
+    <>
+      <GlobalStyle />
+      <SplitPane>
+        <SplitPane.Top />
+        <SplitPane.Bottom />
+      </SplitPane>
+    </>
+  );
 }
 
 export default App;
