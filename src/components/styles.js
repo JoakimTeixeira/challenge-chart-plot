@@ -14,6 +14,6 @@ export const SplitContainer = styled.div`
 `;
 
 export const Separator = styled.div`
-  border: 5px solid black;
+  border: 1px solid black;
   cursor: row-resize;
 `;

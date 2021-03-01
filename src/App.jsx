@@ -3,15 +3,18 @@ import Chart from 'components/Chart';
 import { SplitPane } from 'components/SplitPane';
 import React from 'react';
 import { GlobalStyle } from 'styles/global';
+import { SplitPaneProvider } from 'contexts/SplitPaneContext';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <SplitPane>
-        <Input />
-        <Chart />
-      </SplitPane>
+      <SplitPaneProvider>
+        <SplitPane>
+          <Input />
+          <Chart />
+        </SplitPane>
+      </SplitPaneProvider>
     </>
   );
 }
